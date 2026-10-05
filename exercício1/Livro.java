@@ -1,8 +1,9 @@
 package exercício1;
+
 public class Livro {
-    public String titulo;
-    public String autor;
-    public int paginas;
+    String titulo;
+    String autor;
+    int paginas;
 
     public Livro(String titulo, String autor, int paginas) {
         this.titulo = titulo;

@@ -9,6 +9,8 @@ public class Carro extends Veiculo {
     }
 
     public void exibirInfo() {
-        System.out.println(marca + " " + modelo + " - " + quantidadePortas + " portas");
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Quantidade de portas: " + quantidadePortas);
     }
 }

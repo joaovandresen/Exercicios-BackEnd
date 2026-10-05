@@ -26,16 +26,24 @@ public class Produto {
     public void setPreco(double preco) {
         if (preco >= 0) {
             this.preco = preco;
+        } else {
+            System.out.println("Erro: O preço do produto não pode ser negativo");
         }
     }
 
     public void adicionarEstoque(int quantidade) {
-        quantidadeEstoque = quantidadeEstoque + quantidade;
+        if (quantidade > 0) {
+            quantidadeEstoque += quantidade;
+            System.out.println(quantidade + " unidades adicionadas ao estoque.");
+        }
     }
 
     public void removerEstoque(int quantidade) {
-        if (quantidade <= quantidadeEstoque) {
-            quantidadeEstoque = quantidadeEstoque - quantidade;
+        if (quantidade > 0 && quantidade <= quantidadeEstoque) {
+            quantidadeEstoque -= quantidade;
+            System.out.println(quantidade + " unidades removidas do estoque.");
+        } else {
+            System.out.println("Erro: Estoque insuficiente");
         }
     }
 }

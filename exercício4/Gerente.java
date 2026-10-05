@@ -3,6 +3,11 @@ package exercício4;
 public class Gerente extends Funcionario {
     private String departamento;
 
+    public Gerente(String nome, double salario, String departamento) {
+        super(nome, salario);
+        this.departamento = departamento;
+    }
+
     public String getDepartamento() {
         return departamento;
     }
@@ -12,6 +17,6 @@ public class Gerente extends Funcionario {
     }
 
     public void gerenciar() {
-        System.out.println("Gerente " + getNome() + " no setor " + departamento);
+        System.out.println("O gerente " + getNome() + " está gerenciando o departamento " + departamento + ".");
     }
 }

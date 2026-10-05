@@ -10,6 +10,6 @@ public class Veiculo {
     }
 
     public void buzinar() {
-        System.out.println("Bi bi!");
+        System.out.println("Biiii bii!");
     }
 }
